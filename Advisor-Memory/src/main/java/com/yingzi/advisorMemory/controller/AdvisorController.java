@@ -26,7 +26,9 @@ import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvis
 @RequestMapping("/advisor")
 public class AdvisorController {
 
+    // AI聊天客户端
     private final ChatClient chatClient;
+    // 内存聊天记忆
     private final InMemoryChatMemory chatMemory = new InMemoryChatMemory();
     private final int CHAT_MEMORY_RETRIEVE_SIZE = 100;
     private final String MYSQL_USER = "root";
@@ -38,7 +40,7 @@ public class AdvisorController {
     public AdvisorController(ChatClient.Builder builder) {
         this.chatClient = builder
                 .defaultAdvisors(
-                        new MessageChatMemoryAdvisor(chatMemory)
+                        new MessageChatMemoryAdvisor(chatMemory) //`MessageChatMemoryAdvisor` 是"记忆管家"，负责管理记忆
                 )
                 .build();
     }

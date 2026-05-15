@@ -15,11 +15,11 @@ spring:
 ---
 spring:
   datasource:
-    url: 127.0.0.1:3306
+    url: 8.137.114.181:3306
     username: root
-    password: root
+    password: Tang@123456789
   data:
     redis:
-      host: 127.0.0.1
+      host: 8.137.114.181
       port: 6379
 

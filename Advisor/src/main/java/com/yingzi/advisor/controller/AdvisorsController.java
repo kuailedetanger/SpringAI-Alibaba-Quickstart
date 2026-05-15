@@ -131,8 +131,8 @@ public class AdvisorsController {
     public Flux<String> chatWithoutAdvisors(String prompt) {
         return chatClient.prompt()
                 .user(prompt)
-                .stream()
-                .content();
+                .advisors(a -> a) // 不添加任何Advisor参数，实现无记忆对话
+                .stream().content();
     }
     
     /**
@@ -148,7 +148,7 @@ public class AdvisorsController {
             clientBuilder = clientBuilder.advisors(a -> a.param(CHAT_MEMORY_CONVERSATION_ID_KEY, chatId)
                     .param(CHAT_MEMORY_RETRIEVE_SIZE_KEY, CHAT_MEMORY_RETRIEVE_SIZE));
         } else {
-            clientBuilder = clientBuilder.advisors(java.util.Collections.emptyList()); // 不添加任何Advisor参数，实现无记忆对话
+            clientBuilder = clientBuilder.advisors(a -> a.disableDefaults()); // 不使用记忆
         }
         
         return clientBuilder.stream().content();
