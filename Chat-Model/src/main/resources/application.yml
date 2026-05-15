@@ -11,4 +11,9 @@ spring:
 
       chat:
         options:
-          model: qwq-plus
+          model: qwen-turbo
+          spring:
+        client:
+          connect-timeout: 10s
+          read-timeout: 60s
+          write-timeout: 10s
