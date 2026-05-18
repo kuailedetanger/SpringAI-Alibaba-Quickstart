@@ -97,13 +97,11 @@
     <repositories>
 
         <!-- Spring AI 官方仓库，唯一能找到这些依赖的地方 -->
+
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
         </repository>
 
         <repository>

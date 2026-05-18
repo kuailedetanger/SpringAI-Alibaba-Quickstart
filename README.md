@@ -1,3 +1,8 @@
+提示词生成：
+基于当前项目扩充通俗讲解 适配课堂教学，直白易懂、学生零门槛理解 md文档。存在在doc目录下。
+
+
+
 本项目基于Spring-Ai构建
 - 注：学习过程中主要借鉴[Spring-Ai-Aliababa](https://github.com/alibaba/spring-ai-alibaba) + [Spring-Ai-Alibaba-example](https://github.com/springaialibaba/spring-ai-alibaba-examples)项目
 

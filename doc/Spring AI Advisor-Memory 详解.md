@@ -1,4 +1,4 @@
-# Spring AI Advisor-Memory 项目详解 - 课堂教学版
+# Spring AI Advisor-Memory 项目详解 
 
 ## 一、项目概述
 

@@ -39,6 +39,7 @@ public class WeatherController {
      */
     @GetMapping("/chat-tool-function")
     public String chatTranslateFunction(@RequestParam(value = "query", defaultValue = "请告诉我北京1天以后的天气") String query) {
+//       getWeatherFunction WeatherAutoConfiguration.java`查看。
         return dashScopeChatClient.prompt(query).tools("getWeatherFunction").call().content();
     }
 

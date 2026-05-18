@@ -25,4 +25,4 @@ spring:
 
       weather:
         enabled: true
-        api-key: ${WEATHER_API_KEY}
+        api-key: 9c11cc3e3be0425eaab34454261805
