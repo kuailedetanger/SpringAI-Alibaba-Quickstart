@@ -10,4 +10,6 @@ spring:
     mcp:
       client:
         stdio:
-          servers-configuration: classpath:/mcp-servers-config.json
+          enabled: true
+
+#          servers-configuration: classpath:/mcp-servers-config.json

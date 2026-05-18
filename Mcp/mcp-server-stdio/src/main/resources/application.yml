@@ -14,5 +14,5 @@ spring:
 
     toolcalling:
       baidutranslate:
-        app-id : ${BAIDU_TRANSLATE_APP_ID}
+        app-id : tgd_test
         secret-key: ${BAIDU_TRANSLATE_SECRET_KEY}
